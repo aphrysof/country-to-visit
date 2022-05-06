@@ -54,7 +54,11 @@ const Mainsection = () => {
                 <div>
                   <p>Population:<span>{country.population}</span></p>
                   <p>Capital:<span>{country.capital}</span></p>
-                  <p>Currency:<span>{country.currencies.map(currency => { return (currency) })}</span></p>
+                  {country.currencies && country.currencies.map((currency,index) => {
+                    return (
+                      <p key={index}>Currency:<span>{currency.code}</span></p>
+                    )
+                  } )}
                 </div>
               </div>
           </div>
