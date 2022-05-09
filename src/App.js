@@ -6,12 +6,10 @@ import Visited from "./pages/Visited";
 import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
 import {Routes, Route} from "react-router-dom";
-import {BrowserRouter} from 'react-router-dom';
-import Mainsection from "./components/Mainsection";
+
 
 function App() {
   return (
-    <BrowserRouter>
     <Routes>
       <Route path="/" exact element = {<Homepage />}/>
       <Route path="/Tovisit" element = {<Tovisit />}/>
@@ -19,7 +17,7 @@ function App() {
       <Route path="/Profile" element = {<Profile />}/>
       <Route path="/Settings" element = {<Settings />}/>
     </Routes>
-    </BrowserRouter>
+   
   );
 }
 

@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../logo/BAG-Logo.png'
 import { Link } from 'react-router-dom'
 
+
 const Sidenavbar = () => {
   return (
     <div className = "w-56 h-screen border border-l-[#F2F2F2] sticky">

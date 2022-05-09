@@ -1,8 +1,11 @@
 import React from 'react'
+import Sidenavbar from '../components/Sidenavbar'
 
 const Settings = () => {
   return (
-    <div>Settings</div>
+    <div>
+      <Sidenavbar />
+    </div>
   )
 }
 

@@ -1,8 +1,11 @@
 import React from 'react'
+import Sidenavbar from '../components/Sidenavbar'
 
 const Tovisit = () => {
   return (
-    <div>To_Visit</div>
+    <div>
+      <Sidenavbar/>
+    </div>
   )
 }
 

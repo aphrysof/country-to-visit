@@ -1,8 +1,11 @@
 import React from 'react'
+import Sidenavbar from '../components/Sidenavbar'
 
 const profile = () => {
   return (
-    <div>profile</div>
+    <div>
+      <Sidenavbar/>
+    </div>
   )
 }
 
