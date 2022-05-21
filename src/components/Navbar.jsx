@@ -1,9 +1,12 @@
 import React from 'react'
 import Toggle from './Toogle'
 import Notification from '../logo/notifications.png'
-import profile from '../logo/Rectangle 8.png'
+import { Link } from 'react-router-dom'
+// import { SignInWithGoogle } from '../services/firebase'
+// import { onAuthStateChanged } from 'firebase/auth'
 
 const Navbar = () => {
+
   return (
    <>
    <div className = "flex flex-row justify-between items-center p-0 m-6">
@@ -18,10 +21,16 @@ const Navbar = () => {
           <div className = 'mx-4'>
             <img src = {Notification} alt = 'notification bell' />
           </div>
-          <div className = 'flex items-center'>
-              <p className = 'mx-4 tracking-wider font-normal text-xs text-[#999999]'>Hey,<span className='text-[#212121] ml-1'>Jane</span></p>
-              <img src = {profile} alt = 'profile' />
-          </div>
+  <Link to={'/Signup'}><button className='bg-[#14C704] px-3 text-white py-1 rounded-[10px]'>Sign up</button></Link>
+  <Link to = {'/Login'}><button className='bg-[#14C704] px-3 text-white py-1 rounded-[10px] ml-2'>Sign in</button></Link>
+
+   {/* <div className = 'flex items-center'>
+   <p className = 'mx-4 tracking-wider font-normal text-xs text-[#999999]'>Hey,<span className='text-[#212121] ml-1'>{localStorage.getItem('name')}</span></p>
+   <img src = {localStorage.getItem("photoImage")} alt = 'profile' className='rounded-full h-[40px]' />
+ </div> */}
+
+       
+  {/* */}
       </div>
    </div>
    </>

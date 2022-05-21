@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../logo/BAG-Logo.png'
 import { Link } from 'react-router-dom'
+import { signingOut } from '../services/firebase'
 
 
 const Sidenavbar = () => {
@@ -19,7 +20,10 @@ const Sidenavbar = () => {
             <ul>
               <li><Link to={"/Profile"}>PROFILE</Link></li>
               <li><Link to={"/Settings"}>SETTINGS</Link></li>
-              <li><Link to={"/"}>LOGOUT</Link></li>
+              <li><button onClick = {(e) => {
+                e.preventDefault();
+                signingOut();
+              }}><Link to={"/"}>LOGOUT</Link></button></li>
             </ul>
           </div>
         </div>   
